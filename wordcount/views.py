@@ -26,3 +26,7 @@ def count(request):
                         key=operator.itemgetter(1), reverse=True)
 
     return render(request, 'count.html', {'fulltext': fulltext, 'count': len(wordlist), 'sorteddict': sorteddict})
+
+
+def about(request):
+    return render(request, 'about.html')
